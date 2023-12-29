@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 
-function Products() {
+function Products({naam, data}) {
      var [a,b] = useState(67);
   return (
-    <div className="w-full h-screen bg-zinc-900 text-white p-5">
+    <div className="w-full  bg-zinc-700 text-white p-5">
+        <h1>{naam}</h1>
 
-        <h1>{a}</h1>
-        <button onClick={()=>b(a+1) } className='py-4 px-2 m-5 bg-green-600 rounded-md'>click to change</button>
-    </div>
+        <h1>{data.age}</h1>
+        <h1>{data.college}</h1>
+       </div>
 
   )
 }
